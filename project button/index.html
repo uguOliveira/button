@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POD buttont</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-title">
+        <H1>nicotine spin</H1>
+    </div>
+    <div>
+        <button class="main-btn">
+            <img src="image/02.webp" alt="Imagem" class="btn-image">
+          </button>
+    </div>
+    <script>
+        document.querySelector('.main-btn').addEventListener('click', function() {
+  var image = document.querySelector('.btn-image');
+  image.classList.toggle('rotate');
+});
+document.querySelector('.main-btn').addEventListener('click', function() {
+  var image = document.querySelector('.btn-image');
+  image.classList.add('clicked');
+  
+  setTimeout(function() {
+    image.classList.remove('clicked');
+  }, 1500); 
+});
+    </script>
+    
+</body>
+</html>

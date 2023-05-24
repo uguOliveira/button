@@ -1,0 +1,49 @@
+body{flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(45, 59, 61);
+    
+}
+
+.main-btn {
+    width: 256px; /* Ajuste a largura desejada */
+    height: 256px; /* Ajuste a altura desejada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto; 
+    background-color: transparent;
+    border-radius: 100%;
+    }
+.main-btn:active{transform: scale(0.95);
+}
+.btn-image.clicked {
+    box-shadow: 0 0 10px 5px rgba(35, 88, 102, 0.8); /* Efeito de brilho */
+  }
+
+
+
+.btn-image {
+   
+    transition: transform 0.3s ease;
+    width: 256px;
+    height: 256px;
+    border-radius: 100%;
+  }
+  
+  .rotate {
+    transform: rotate(360deg);
+  }
+.main-title{
+    text-transform: uppercase;
+    font-weight: 800;
+
+    
+}
